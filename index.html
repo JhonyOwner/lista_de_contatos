@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">             <!-- Formato: Calistoga -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One+Calistoga&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header_container">        
+            <header>
+            <img src="Material de Apoio/Logo.png" alt="Lista de telefone" />
+            <h1>Lista Telefonica</h1>
+        </header>
+    </div>
+        <form id="form_lista">
+            <input type="text" id="nome_pessoa" placeholder="Informar o Nome" required />
+            <input type="tel" id="telefone_pessoa" placeholder="Informar o Telefone" required />
+            <input type="file" id="foto_pessoa" accept="image/*"/>
+            <label for="foto_pessoa" class="custom-file-upload">Escolher Foto</label>            
+            <button type="submit" id="botao_adicionar">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nº |</th>
+                    <th>Nome da Pessoa</th>
+                    <th>Telefone da Pessoa</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
